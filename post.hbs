@@ -5,41 +5,8 @@
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
-<!--
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-        {{#if @blog.navigation}}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {{/if}}
-    </nav>
-</header> -->
 
-<aside class="cover">
-    <div class="cover-image" style="background-image:{{#if image}} url({{image}}){{else}}url({{@blog.cover}}){{/if}}; background-size: cover;"></div>
-    <nav>
-    <div class="cover-wrapper">
-        <div class="main-header-content">
-            <h1 class="page-title">{{@blog.title}} </h1>
-            <h2 class="page-description">{{@blog.description}}</h2>
-        </div>
-        <div class="nav-buttons">
-            <div class="button" title="Home">
-                <a href="/"><span class="fa fa-home"></span></a>
-            </div>
-            <div class="button" title="Projects">
-                <a href="projects"><span class="fa fa-cogs"></span></a>
-            </div>
-            <div class="button" title="GitHub">
-                <a href="https://github.com/ktbee"><span class="fa fa-github"></span></a>
-            </div>
-            <div class="button" title="RSS feed">
-                <a href="/rss"><span class="fa fa-rss"></span></a>
-            </div>
-        </div>
-    </div>
-    </nav>
-</aside>
+{{> "cover"}}
 
 <main class="content" role="main">
     <article class="{{post_class}}">
