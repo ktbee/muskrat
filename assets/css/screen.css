@@ -1774,12 +1774,6 @@ body:not(.post-template) .post-title {
    11. Footer - The bottom of every page
    ========================================================================== */
 
-#hubspot-form {
-  margin: auto;
-  margin-bottom: 20px;
-  width: 300px;
-}
-
 .site-footer {
     margin: 8rem 0 0 0;
     font-family: "Open Sans", sans-serif;
