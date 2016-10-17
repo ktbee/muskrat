@@ -1,6 +1,8 @@
 {{!-- The big featured header --}}
 <aside class="cover">
-   <div class="cover-image" style="background-image:{{#if image}} url({{image}}){{else}}url({{@blog.cover}}){{/if}}; background-size: cover; background-position: center center"></div>
+   <div class="cover-image" style="background-image:{{#if image}} url({{image}})
+            {{else if tag.image}} url({{tag.image}})
+            {{else}}url({{@blog.cover}}){{/if}}; background-size: cover; background-position: center center"></div>
     <div class="cover-wrapper">
         <div class="main-header-content">
             <h1 class="page-title">{{@blog.title}} </h1>
